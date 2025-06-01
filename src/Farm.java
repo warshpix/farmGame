@@ -66,7 +66,7 @@ public class Farm {
     }
 
     public void removeField() {
-        if (fieldsList.isEmpty()) {
+        if (fieldsList.isEmpty() || fieldsList.size()==1) {
             System.out.println("Немає жодного поля для видалення.");
             return;
         }
@@ -98,7 +98,7 @@ public class Farm {
     }
 
     public void removeBuilding() {
-        if (buildingsList.isEmpty()) {
+        if (buildingsList.isEmpty() || buildingsList.size()==1) {
             System.out.println("Немає жодної будівлі для видалення.");
             return;
         }
